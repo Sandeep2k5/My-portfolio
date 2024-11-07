@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1f1d2b;
+    color: white;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  header {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2em;
+  }
+  
+  .buttons button {
+    background-color: #9b5de5;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  header .buttons button:hover {
+    background-color: #6f39a1;
+  }
+  
+  section {
+    padding: 50px 0;
+  }
+  
+  section h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  section h3 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .skills, .Project-item, .portfolio-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  .edu {
+    display:flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .Project-item {
+    background-color: #333;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .Project-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+  }
+  
+  .Project-item p {
+    font-size: 1.1em;
+  }
+  
+  .Project-item p {
+    display: none;
+    transition: all 0.3s ease;
+  }
+
+  button {
+    background-color: #9b5de5;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #6f39a1;
+  }
+  
+  .portfolio-items {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .portfolio-item {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about, .Projects, .portfolio {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.about { animation-delay: 0.5s; }
+.Projects { animation-delay: 1s; }
+.portfolio { animation-delay: 1.5s; }
