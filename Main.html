@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><Sandeep-Portfolio></Sandeep-Portfolio></title>
   <link rel="stylesheet" href="Style.css">
+  <script src="https://kit.fontawesome.com/cac00eec35.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="header">
@@ -14,9 +15,8 @@
           <img src = "" class="logo">
           <ul>
            <li><a href="#about">About</a></li>
-           <li><a href="#experience">Experience</a></li>
            <li><a href="#projects">Projects</a></li>
-           <li><a href="#contact">Contact</a></li>
+           <li><a href="#contact-info">Contact</a></li>
           </ul>
         </nav>
     </footer><br>
@@ -27,89 +27,100 @@
       <h1>Hi! I'm Sandeep</h1> 
   </header>
 
-  <section class="about">
-    <h2>About me</h2>
-    <p>I'm Sandeep, a passionate software developer with a strong foundation in Java, Python and in MERN Stack. My journey through internships and personal projects has developed my ability to build scalable applications, design efficient systems, and contribute to the entire software development lifecycle. I’m always eager to learn new technologies and solve complex problems</p>
-    <h3>Education Background</h3><br>
-    <div class ="edu">    
-      <p style="font-size: larger;" >2022 - 2026</p>
-         Bachelor of Technology<br>
-         Discipline: Computer Science<br>
-        National Institute of Technology, Puducherry<br>
-        CGPA – 7.91/10
-        <p style="font-size: large;" >2020 - 2022</p>
-        Grade 12, CBSE<br>
-        Aditya Vidyashram Gurugram, India <br>
-        Score – 85.8 %
-        <p style="font-size: large;" >2015 - 2020</p>
-        Grade 10, CBSE<br>
-        Amrita Vidyalayam, India <br>
-        Score – 91.4 %
-    </div>
-    <h3>Technical Proficiency</h3><br>
-    <div class="skills">
-      <div>
-        lLanguages: C,JAVA,PYTHON,HTML, CSS, JavaScript<br>
-        Software’s:IntelliJ IDEA, Git, MySQL,MongoDB<br>
-        <p>Frameworks:React, Express, NodeJS, TensorFlow, PyTorch</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="Projects">
-    <h2>What I offer</h2>
-    <div class="Project-item">
-      <h3>Web Design</h3>
-      <p>Web development is the process of building...</p>
-      <button>Read more</button>
-    </div>
-    <div class="Project-item">
-      <h3>Mobile App</h3>
-      <p>Mobile app development involves creating...</p>
-      <button>Read more</button>
-    </div>
-    <div class="Project-item">
-      <h3>UI/UX Design</h3>
-      <p>Designing user interfaces that are...</p>
-      <button>Read more</button>
+  <div id="about">
+        <div class ="row">
+          <div class = "about-col-1">
+          <img src ="Profile.jpeg">
+        </div>
+        <div class = "about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I'm Sandeep, a passionate software developer with a strong foundation in Java, Python and in MERN Stack. My journey through internships and personal projects has developed my ability to build scalable applications, design efficient systems, and contribute to the entire software development lifecycle. I’m always eager to learn new technologies and solve complex problems</p>
+          <div class="tab-titles">
+            <p class="tab-links active-links" onclick="opentab('skills')">Technical Proficiency</p>
+            <p class="tab-links" onclick="opentab('Education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab",id="skills">
+            <ul>
+                <li><span>Languages</span><br>C,JAVA,PYTHON,HTML, CSS, JavaScript</li>
+                <li><span>Software’s</span><br>IntelliJ IDEA, Git, MySQL,MongoDB</li>
+                <li><span>Frameworks</span><br>React, Express, NodeJS, TensorFlow, PyTorch</li>
+            </ul> 
+          </div>
+        <div class="tab-contents"id ="Education"><ul>
+          <li><span>2022-2026</span><br> Bachelor of Technology<br>
+            Discipline: Computer Science<br>
+            National Institute of Technology, Puducherry<br>
+            CGPA – 7.91/10</li>
+          <li><span>2020 - 2022</span><br>Grade 12, CBSE<br>
+            Aditya Vidyashram Gurugram, India <br>
+            Score – 85.8 %</li>
+          <li><span>2018 - 2020</span><br>Grade 10, CBSE<br>
+            Amrita Vidyalayam, India <br>
+            Score – 91.4 %</li>
+        </ul></div>
+        </div>
     </div>
   </section>
 
-  <section class="portfolio">
-    <h2>My Latest Work</h2>
-    <div class="portfolio-items">
-      <div class="portfolio-item">
-        <img src="project1.jpg" alt="Frontend project">
-        <button>Frontend Project</button>
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="work-list" id ="projects">
+        <div class="work">
+          <img src ="OIP.jpg">
+          <div class="layer">
+            <h3>Simulation of cryptocurrency using Blockchain</h3>
+            <p>Built a Python-based cryptocurrency wallet using blockchain integration 
+              with PyQt5 for GUI, featuring account creation, balance viewing, and 
+              transaction capabilities </p>
+              <a href="https://github.com/Sandeep2k5/Cryptocurreny-Wallet"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src ="react.jpg">
+          <div class="layer">
+            <h3> ToDO - app</h3>
+            <p>Built a Todo application which has the CRUD Properties where it is using MongoDB for storage purpose and Express for backend commnunication</p>
+              <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
       </div>
-      <div class="portfolio-item">
-        <img src="project2.jpg" alt="Geo-based app">
-        <button>Geo-based app</button>
-      </div>
-      <div class="portfolio-item">
-        <img src="project3.jpg" alt="Photography site">
-        <button>Photography site</button>
-      </div>
+    </div>
+  </div>
+  
+  <section class="contact-section" id = "contact-info"> 
+    <h2 style="size: 45px;">Contact Me</h2>
+    <div class="contact-info">
+      <p>Mobile Number</p>
+      <p>+91 6374 899 340</p>
+
+      <p>Email</p>
+      <p>sandeeputhayakumar@gmail.com</p>
+
+      <p>Social Network</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/sandeep-uthayakumar-8b7242255/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Sandeep2k5"><i class="fab fa-github"></i></a>
+        <a href="https://leetcode.com/u/Sandeep2k5/"><i class="fa-solid fa-code"></i></a>
+      </div>   
+
     </div>
   </section>
 
-  <section class="contact">
-    <h2>To Connect with me </h2>
-    <div class="portfolio-items">
-      <img src="mail".jpg ">
-        <a href="https://mail.google.com/mail/u/0/?tab=wm#inbox">Gmail</a>
-      </div>
-      <div class="portfolio-item">
-        <img src="project2.jpg" alt="Geo-based app">
-        <button>Geo-based app</button>
-      </div>
-      <div class="portfolio-item">
-        <img src="project3.jpg" alt="Photography site">
-        <button>Photography site</button>
-      </div>
-    </div>
-  </section>
+  <script >
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
 
-  <script src="script.js"></script>
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+     
+    }</script>
 </body>
 </html>
